@@ -8,13 +8,13 @@ function showInfo(aircraft) {
     // Update the info section
     if (aircraft === "Fighter Jet") {
         infoText = "Zion's Fighter jets are fast and powerful aircraft used in combat!";
-        videoUrl = "https://www.youtube.com/watch?v=zW28Mb1YvwY"; // Example Fighter Jet video
+        videoUrl = "https://www.youtube.com/embed/zW28Mb1YvwY"; // Fighter Jet video
     } else if (aircraft === "Passenger Plane") {
         infoText = "Zion's Passenger planes carry people around the world comfortably.";
-        videoUrl = "https://www.youtube.com/watch?v=ExAEDQ26HTE"; // Example Passenger Plane video
+        videoUrl = "https://www.youtube.com/embed/ExAEDQ26HTE"; // Passenger Plane video
     } else if (aircraft === "Helicopter") {
         infoText = "Zion's Helicopters can hover and land in tight spaces. They're very versatile!";
-        videoUrl = "https://www.youtube.com/watch?v=g90QUoORmc0"; // Example Helicopter video
+        videoUrl = "https://www.youtube.com/embed/g90QUoORmc0"; // Helicopter video
     }
 
     // Update the info section
@@ -24,5 +24,7 @@ function showInfo(aircraft) {
     if (videoUrl) {
         aircraftVideo.src = videoUrl;
         videoContainer.style.display = "block";
+    } else {
+        videoContainer.style.display = "none"; // Hide video container if no URL
     }
 }
