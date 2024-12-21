@@ -103,6 +103,7 @@ iframe {
     }
 
     iframe {
-        height: 300px; /* Adjust video height for smaller screens */
+        height: 315px; /* Adjust video height for smaller screens */
+        width: 100%;
     }
 }
