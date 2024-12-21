@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zion's Aircraft Explorer!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Zion's Aircraft Explorer!</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="aircraft" onclick="showInfo('Fighter Jet')">
+                <img src="fighter-jet.jpg" alt="Fighter Jet">
+                <p>Fighter Jet</p>
+            </div>
+            <div class="aircraft" onclick="showInfo('Passenger Plane')">
+                <img src="passenger-plane.jpg" alt="Passenger Plane">
+                <p>Passenger Plane</p>
+            </div>
+            <div class="aircraft" onclick="showInfo('Helicopter')">
+                <img src="helicopter.jpg" alt="Helicopter">
+                <p>Helicopter</p>
+            </div>
+        </section>
+        <section id="info">
+            <h2>Click on an aircraft to learn more!</h2>
+        </section>
+        <section id="videoContainer" style="display: none;">
+            <h3>Watch the Aircraft in Action:</h3>
+            <iframe id="aircraftVideo" src="" allowfullscreen></iframe>
+        </section>
+        <div id="jet"></div>
+    </main>
+
+</body>
+</html>
